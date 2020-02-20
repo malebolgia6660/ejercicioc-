@@ -1,0 +1,161 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+int main (){
+	float precio150grssiniva, preciosamsiniva, preciopast4undsiniva, preciopalm4undsiniva, precioponquesiniva, preciopanquesiniva, precio924galletassiniva, precio924hojaldre,
+	preciotakysiniva, preciogalletasinaicasiniva, preciobuonampsiniva, preciogalletas624, preciobizcochossiniva, iva1, iva2, iva3, iva4, iva5, iva6, iva7,
+	iva8, iva9, iva10, iva11, iva12, iva13, preciofull, preciounidad, preciounidadcostomasiva150grs, preciounidadcostomasivasam, preciounidadcostomasivapast4unds,
+	preciounidadcostomasivapalm4unds, preciounidadcostomasivaponques, preciounidadcostomasiva924galletas, preciounidadcostomasiva924hojaldre, preciounidadcostomasivataky,
+	preciounidadcostomasivainaica150, preciounidadcostomasivagalletas624, preciounidadcostomasivabuonamp, preciounidadcostomasivabizcos,
+	precioalmayorgalletas150, preciokioskogalletas150, precioalmayorgalletassam, preciokioskogalletassam, precioalmayorpast4unds, precioalmayortaky, preciokioskotaky,
+	preciokioskopast4unds, precioalmayorpalm4unds, preciokioskopalm4unds, precioalmayorponques, preciokioskoponques, precioalmayor924galletas,
+	preciokiosko924galletas, precioalmayor924hojaldre, preciokiosko924hojaldre, precioalmayorbuonamp, 	preciokioskobuonamp,
+	precioalmayorbizcos, preciokioskobizcos, precioalmayorgalletas624, 	preciokioskogalletas624, preciomariaitaliatub, preciounidadcostomasivamaria, 	precioalmayormariaitalia, preciokioskomariaitalia,
+	preciopansandw, preciounidadcostopansandwich, preciokioskopansandw, preciopanburguer, preciounidadcostopanburguer, preciokioskopanburguer, preciopanperro,
+	preciounidadcostopanperro, preciokioskopanperro, perdidaporpuntogalletas150grs, gananciagalletas150grs;
+	
+	
+	
+	
+	
+	cout<<"Digite precio caja sin iva 150 grs : "; cin>>precio150grssiniva;
+	cout<<"Digite precio caja sin iva galletas sam: "; cin>>preciosamsiniva;
+	cout<<"Digite precio caja sin iva pastelitos 4und: "; cin>>preciopast4undsiniva;
+	cout<<"Digite precio caja sin iva palmeritas 4und: "; cin>>preciopalm4undsiniva;
+	cout<<"Digite precio caja sin iva ponquesitos: "; cin>> precioponquesiniva;
+	cout<<"Digite precio caja sin iva panque 3 unidades: "; cin>>preciopanquesiniva;
+	cout<<"Digite precio caja sin iva 9x24 galletas: "; cin>>precio924galletassiniva;
+	cout<<"Digite precio caja sin iva 9x24 hojaldre: "; cin>>precio924hojaldre;
+	cout<<"Digite precio caja sin iva taky: "; cin>>preciotakysiniva;
+	cout<<"Digite precio caja sin iva galletas inaica 150: "; cin>>preciogalletasinaicasiniva;
+	cout<<"Digite precio caja sin iva buona mp: "; cin>>preciobuonampsiniva;
+	cout<<"Digite precio caja sin iva galletas 6x36: "; cin>>preciogalletas624;
+	cout<<"Digite precio caja sin iva bizcochos: "; cin>>preciobizcochossiniva;
+	cout<<"Digite precio caja sin iva Maria Italia Tubular: "; cin>>preciomariaitaliatub;
+	cout<<"Digite precio cesta Pan Sandwich: "; cin>>preciopansandw;
+	cout<<"Digite precio cesta Pan Burguer: "; cin>>preciopanburguer;
+	cout<<"Digite precio cesta Pan Perro: "; cin>>preciopanperro;
+	
+	
+	iva1 = precio150grssiniva*1.16;
+	iva2 = preciosamsiniva*1.16;
+	iva3 = preciopast4undsiniva*1.16;
+	iva4 = preciopalm4undsiniva*1.16;
+	iva5 = precioponquesiniva*1.16;
+	iva6 = precio924galletassiniva*1.16;
+	iva7 = precio924hojaldre*1.16;
+	iva8 = preciotakysiniva*1.16;
+	iva9 = preciogalletasinaicasiniva*1.16;
+	iva10 = preciobuonampsiniva*1.16;
+	iva11 = preciogalletas624*1.16;
+	iva12 = preciobizcochossiniva*1.16;
+	iva13 = preciomariaitaliatub*1.16;
+	
+	
+	preciounidadcostomasiva150grs = iva1/24;
+	preciounidadcostomasivasam = iva2/30;
+	preciounidadcostomasivapast4unds = iva3/24;
+	preciounidadcostomasivapalm4unds = iva4/24;
+	preciounidadcostomasivaponques = iva5/18;
+	preciounidadcostomasiva924galletas = iva6/9;
+	preciounidadcostomasiva924hojaldre = iva7/9;
+	preciounidadcostomasivataky = iva8/24;
+	preciounidadcostomasivainaica150 = iva9/30;
+	preciounidadcostomasivagalletas624 = iva10/6;
+	preciounidadcostomasivabuonamp = iva11/30;
+	preciounidadcostomasivabizcos = iva12/30;
+	preciounidadcostomasivamaria = iva13/12;
+	preciounidadcostopansandwich = preciopansandw/10;
+	preciounidadcostopanburguer = preciopansandw/8;
+	preciounidadcostopanperro = preciopanperro/8;
+	
+	
+	cout<<"\nEl Precio de costo de Galletas 150 grs es: "<<preciounidadcostomasiva150grs<<endl;
+	cout<<"\nEl Precio de costo de Galletas SAM es: "<<preciounidadcostomasivasam<<endl;
+	cout<<"\nEl Precio de costo de Past 4 unidades es: "<<preciounidadcostomasivapast4unds<<endl;
+	cout<<"\nEl Precio de costo de Palmeritas 4 unidades: "<<preciounidadcostomasivapalm4unds<<endl;
+	cout<<"\nEl Precio de costo de Ponquesitos 6 unidades: "<<preciounidadcostomasivaponques<<endl;
+	cout<<"\nEl Precio de costo de Galletas Display: "<<preciounidadcostomasiva924galletas<<endl;
+	cout<<"\nEl Precio de costo de Hojaldre Display: "<<preciounidadcostomasiva924hojaldre<<endl;
+	cout<<"\nEl Precio de costo de Galletas Taky: "<<preciounidadcostomasivataky<<endl;
+	cout<<"\nEl Precio de costo de Galletas 150 grs Inaica: "<<preciounidadcostomasivainaica150<<endl;
+	cout<<"\nEl Precio de costo de Taky Premium Display: "<<preciounidadcostomasivagalletas624<<endl;
+	cout<<"\nEl Precio de costo de Buona MP: "<<preciounidadcostomasivabuonamp<<endl;
+	cout<<"\nEl Precio de costo de Bizcochos: "<<preciounidadcostomasivabizcos<<endl;
+	cout<<"\nEl Precio de costo de Maria Italia Tubular: "<<preciounidadcostomasivamaria<<endl;
+	cout<<"\nEl Precio de costo de Pan Sandwich: "<<preciounidadcostopansandwich<<endl;
+	cout<<"\nEl Precio de costo de Pan Burguer: "<<preciounidadcostopanburguer<<endl;
+	cout<<"\nEl Precio de costo de Pan Perro: "<<preciounidadcostopanperro<<endl;
+	
+	
+	precioalmayorgalletas150 = preciounidadcostomasiva150grs*1.30;
+	preciokioskogalletas150 = preciounidadcostomasiva150grs*1.45;
+	precioalmayorgalletassam = preciounidadcostomasivasam*1.30;
+	preciokioskogalletassam = preciounidadcostomasivasam*1.45;
+	precioalmayorpast4unds = preciounidadcostomasivapast4unds*1.30;
+	preciokioskopast4unds = preciounidadcostomasivapast4unds*1.45;
+	precioalmayorpalm4unds = preciounidadcostomasivapalm4unds*1.30;
+	preciokioskopalm4unds = preciounidadcostomasivapalm4unds*1.45;
+	precioalmayorponques = preciounidadcostomasivaponques*1.30;
+	preciokioskoponques = preciounidadcostomasivaponques*1.45;
+	precioalmayor924galletas = preciounidadcostomasiva924galletas*1.30;
+	preciokiosko924galletas = preciounidadcostomasiva924galletas*1.45;
+	precioalmayor924hojaldre = preciounidadcostomasiva924hojaldre*1.30;
+	preciokiosko924hojaldre = preciounidadcostomasiva924hojaldre*1.45;
+	precioalmayortaky = preciounidadcostomasivataky*1.30;
+	preciokioskotaky = preciounidadcostomasivataky*1.45;
+	precioalmayorgalletas624 = preciounidadcostomasivagalletas624*1.30;
+	preciokioskogalletas624 = preciounidadcostomasivagalletas624*1.45;
+	precioalmayorbuonamp = preciounidadcostomasivabuonamp*1.30;
+	preciokioskobuonamp = preciounidadcostomasivabuonamp*1.45;
+	precioalmayorbizcos = preciounidadcostomasivabizcos*1.30;
+	preciokioskobizcos = preciounidadcostomasivabizcos*1.50;
+	precioalmayormariaitalia = preciounidadcostomasivamaria*1.30;
+	preciokioskomariaitalia = preciounidadcostomasivamaria*1.50;
+	preciokioskopansandw = preciounidadcostopansandwich*1.30;
+	preciokioskopanburguer = preciounidadcostopanburguer*1.30;
+	preciokioskopanperro = preciounidadcostopanperro*1.30;
+	
+	
+	cout<<"\nEl Precio de Galletas 150 grs Al Mayor es: "<<precioalmayorgalletas150<<endl;
+	cout<<"\nEl Precio de Galletas 150 grs Al Kiosko es: "<<preciokioskogalletas150<<endl;
+	cout<<"\nEl Precio de Galletas SAM Al Mayor es: "<<precioalmayorgalletassam<<endl;
+	cout<<"\nEl Precio de Galletas SAM Al Kiosko es: "<<precioalmayorgalletassam<<endl;
+	cout<<"\nEl Precio de Past 4 unidades Al Mayor es: "<<precioalmayorpast4unds<<endl;
+	cout<<"\nEl Precio de Past 4 unidades al Kiosko es: "<<preciokioskopast4unds<<endl;
+	cout<<"\nEl Precio de Palmeritas Al Mayor 4 unidades: "<<precioalmayorpalm4unds<<endl;
+	cout<<"\nEl Precio de Palmeritas AL Kiosko 4 unidades: "<<preciokioskopalm4unds<<endl;
+	cout<<"\nEl Precio de Ponquesitos 6 unidades Al Mayor: "<<precioalmayorponques<<endl;
+	cout<<"\nEl Precio de Ponquesitos 6 unidades Al Kiosko: "<<preciokioskoponques<<endl;
+	cout<<"\nEl Precio de Galletas Display Al Mayor: "<<precioalmayor924galletas<<endl;
+	cout<<"\nEl Precio de Galletas Display Al Kiosko: "<<preciokiosko924galletas<<endl;
+	cout<<"\nEl Precio de Hojaldre Display Al Mayor: "<<precioalmayor924hojaldre<<endl;
+	cout<<"\nEl Precio de Hojaldre Display Al Kiosko: "<<preciokiosko924hojaldre<<endl;
+	cout<<"\nEl Precio de Galletas Taky Al Mayor: "<<precioalmayortaky<<endl;
+	cout<<"\nEl Precio de Galletas Taky Al Kiosko: "<<preciokioskotaky<<endl;
+	cout<<"\nEl Precio de Buona MP AL Mayor es: "<<precioalmayorbuonamp<<endl;
+	cout<<"\nEl Precio de Buona MP AL Kiosko es: "<<preciokioskobuonamp<<endl;
+	cout<<"\nEl Precio de Taky Premium Display Al Mayor es: "<<precioalmayorgalletas624<<endl;
+	cout<<"\nEl Precio de Taky Premium Display Al Kiosko es: "<<preciokioskogalletas624<<endl;
+	cout<<"\nEl Precio de Bizcochos Al Mayor es: "<<precioalmayorbizcos<<endl;
+	cout<<"\nEl Precio de Bizcochos Al Kiosko es: "<<preciokioskobizcos<<endl;
+	cout<<"\nEl Precio de Maria Italia Al Mayor es: "<<precioalmayormariaitalia<<endl;
+	cout<<"\nEl Precio de Maria Italia Al Kiosko es: "<<preciokioskomariaitalia<<endl;
+	cout<<"\nEl Precio de Pan Sandwich Al Kiosko es: "<<preciokioskopansandw<<endl;
+	cout<<"\nEl Precio de Pan Burguer Al Kiosko es: "<<preciokioskopanburguer<<endl;
+	cout<<"\nEl Precio de Pan Perro Al Kiosko es: "<<preciokioskopanperro<<endl;
+	
+	
+
+	perdidaporpuntogalletas150grs = preciokioskogalletas150-preciokioskogalletas150*10/100;
+	gananciagalletas150grs = perdidaporpuntogalletas150grs-preciounidadcostomasiva150grs;
+	
+	cout<<"\nLa Ganancia Por Unidad de galletas a 150 grs es: "<<gananciagalletas150grs<<endl;
+	
+	
+	
+return 0;
+	
+	
